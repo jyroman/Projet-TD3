@@ -1,7 +1,3 @@
 # Projet-TD3
 
-Readme pour le projet
-
-Fichier pour le projet du TD3
-
-16/03/2015 : added userconf.sh (0.2)
+Fichier pour le projet du TD3 : scripts de test et installation automatisée pour apache, mysql et phpmyadmin pour debian 7.8
