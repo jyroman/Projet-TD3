@@ -4,7 +4,7 @@
 if [ -f /etc/apache2/envvars ]
 then
 #Dans le fichier de configuration d'apache trouver le user et le séparer
-	userhttp=$(cat /etc/apache2/envvars | grep USER | cut -d ' ' -f2 | cut -d = -f2 )
+	userhttp=$(cat /etc/apache2/envvars | grep USER | cut -d = -f2 )
 	echo "http_user_conf : "$userhttp
 else
 #erreur le fichier n'existe pas
