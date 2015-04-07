@@ -9,8 +9,9 @@ useradd ${usrmsql} -u 501
 service apache2 stop
 service mysql stop
 
+usrsql="= ${usrsql}"
 sed -i "s/www-data/${usrapa}/" /etc/apache2/envvars
-sed -i "s/mysql/${usrmsql}/" /etc/mysql/my.cnf
+sed -i "s/= mysql/${usrsql}/" /etc/mysql/my.cnf
 
 chown -R ${usrapa} /var/lock/apache2
 chown -R ${usrmsql} /var/lib/mysql
